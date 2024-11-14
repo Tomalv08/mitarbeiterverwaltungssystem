@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mitarbeiterverwaltungssystem", "Mitarbeiterverwaltungssystem.csproj", "{CF96534F-64B7-4C9A-ACEC-D1A27F50FB7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "..\UnitTest\UnitTest.csproj", "{8C4DF61A-0338-43C1-8FE5-1454F63EF363}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF96534F-64B7-4C9A-ACEC-D1A27F50FB7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF96534F-64B7-4C9A-ACEC-D1A27F50FB7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF96534F-64B7-4C9A-ACEC-D1A27F50FB7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF96534F-64B7-4C9A-ACEC-D1A27F50FB7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C4DF61A-0338-43C1-8FE5-1454F63EF363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4DF61A-0338-43C1-8FE5-1454F63EF363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4DF61A-0338-43C1-8FE5-1454F63EF363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4DF61A-0338-43C1-8FE5-1454F63EF363}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3713E02-F454-4EFD-94EE-D50F287B0370}
+	EndGlobalSection
+EndGlobal

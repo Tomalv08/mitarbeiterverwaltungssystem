@@ -1,0 +1,89 @@
+﻿@page "/"
+
+<style>
+    .home-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .card {
+        width: 300px;
+        margin: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+    .card-body {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+</style>
+<h3>Welcome to the Employee Management System</h3>
+<div class="home-container">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Add Employee</h5>
+            <p class="card-text">Add a new employee or manager to the system.</p>
+            <NavLink href="/addEmployee" class="btn btn-primary">Go to Add Employee</NavLink>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Edit Employee</h5>
+            <p class="card-text">Edit the details of an existing employee.</p>
+            <NavLink href="/editEmployee" class="btn btn-primary">Go to Edit Employee</NavLink>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Delete Employee</h5>
+            <p class="card-text">Remove an employee from the system.</p>
+            <NavLink href="/deleteEmployee" class="btn btn-primary">Go to Delete Employee</NavLink>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Employee List</h5>
+            <p class="card-text">View the list of all employees in the system.</p>
+            <NavLink href="/employeeList" class="btn btn-primary">Go to Employee List</NavLink>
+        </div>
+    </div>
+</div>
+
+@code {
+    // Optional: Add any code-behind logic if necessary
+}

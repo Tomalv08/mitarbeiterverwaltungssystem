@@ -1,0 +1,105 @@
+﻿@page "/deleteEmployee"
+@inject EmployeeState EmployeeState
+@inject IJSRuntime JS
+@using Mitarbeiterverwaltungssystem.Modals
+
+<style>
+    .form-container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        background: #f4f4f4;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .selected-employee {
+        background: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+</style>
+<h3>Delete Employee</h3>
+<div class="form-container">
+    <div class="form-group">
+        <label>Select Employee:</label>
+        <select @onchange="OnEmployeeSelect" class="form-control">
+            <option value="0">Select Employee</option>
+            @foreach (var employee in EmployeeState.Employees)
+            {
+                <option value="@employee.Id">@employee.Name</option>
+            }
+        </select>
+    </div>
+
+    @if (selectedId != 0)
+    {
+        <div class="selected-employee">
+            <h4>Are you sure you want to delete:</h4>
+            <p><strong>Name:</strong> @selectedEmployee.Name</p>
+            <p><strong>Position:</strong> @selectedEmployee.Position</p>
+            @if (selectedEmployee is Manager manager)
+            {
+                <p><strong>Department:</strong> @manager.Department</p>
+            }
+            <button @onclick="DeleteSelectedEmployee" class="btn btn-danger">Delete Employee</button>
+        </div>
+    }
+</div>
+
+@code {
+    private int selectedId;
+    private Employee selectedEmployee;
+
+    private void OnEmployeeSelect(ChangeEventArgs e)
+    {
+        selectedId = int.Parse(e.Value.ToString());
+        selectedEmployee = EmployeeState.Employees.FirstOrDefault(emp => emp.Id == selectedId);
+    }
+
+    private void DeleteSelectedEmployee()
+    {
+        if (selectedEmployee != null)
+        {
+            EmployeeState.DeleteEmployee(selectedId);
+            JS.InvokeVoidAsync("alert", $"{selectedEmployee.Name} has been deleted.");
+            selectedId = 0;
+            selectedEmployee = null;
+        }
+    }
+}

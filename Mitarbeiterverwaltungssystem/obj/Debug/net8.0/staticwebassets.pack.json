@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Projektarbeit\\mitarbeiterverwaltungssystem\\Mitarbeiterverwaltungssystem\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Projektarbeit\\mitarbeiterverwaltungssystem\\Mitarbeiterverwaltungssystem\\obj\\Debug\\net8.0\\compressed\\h9s3hownqp.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Projektarbeit\\mitarbeiterverwaltungssystem\\Mitarbeiterverwaltungssystem\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Mitarbeiterverwaltungssystem.styles.css",
+      "PackagePath": "staticwebassets\\Mitarbeiterverwaltungssystem.styles.css"
+    },
+    {
+      "Id": "C:\\Projektarbeit\\mitarbeiterverwaltungssystem\\Mitarbeiterverwaltungssystem\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Projektarbeit\\mitarbeiterverwaltungssystem\\Mitarbeiterverwaltungssystem\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Projektarbeit\\mitarbeiterverwaltungssystem\\Mitarbeiterverwaltungssystem\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Projektarbeit\\mitarbeiterverwaltungssystem\\Mitarbeiterverwaltungssystem\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Projektarbeit\\mitarbeiterverwaltungssystem\\Mitarbeiterverwaltungssystem\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Projektarbeit\\mitarbeiterverwaltungssystem\\Mitarbeiterverwaltungssystem\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Projektarbeit\\mitarbeiterverwaltungssystem\\Mitarbeiterverwaltungssystem\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Mitarbeiterverwaltungssystem.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Mitarbeiterverwaltungssystem.props",
+      "PackagePath": "build\\Mitarbeiterverwaltungssystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Mitarbeiterverwaltungssystem.props",
+      "PackagePath": "buildMultiTargeting\\Mitarbeiterverwaltungssystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Mitarbeiterverwaltungssystem.props",
+      "PackagePath": "buildTransitive\\Mitarbeiterverwaltungssystem.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
